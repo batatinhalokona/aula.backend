@@ -1,0 +1,30 @@
+public class VetorOrdenadoTest {
+
+    public static void main(String[] args) {
+        VetorOrdenado vetorOrdenado = new VetorOrdenado(7);
+
+        vetorOrdenado.inserir(82);
+        vetorOrdenado.inserir(40);
+        vetorOrdenado.inserir(20);
+        vetorOrdenado.inserir(60);
+        vetorOrdenado.inserir(10);
+        vetorOrdenado.inserir(50);
+
+        vetorOrdenado.imprimir();
+
+        int pesquisa_1 = vetorOrdenado.pesquisar_linear(82);
+        int pesquisa_2 = vetorOrdenado.pesquisar_linear(20);
+        int pesquisa_3 = vetorOrdenado.pesquisar_linear(10);
+
+        System.out.println(pesquisa_1);
+        System.out.println(pesquisa_2);
+        System.out.println(pesquisa_3);
+
+        vetorOrdenado.excluir(82);
+        vetorOrdenado.excluir(20);
+        vetorOrdenado.excluir(10);
+
+        vetorOrdenado.imprimir();
+    }
+
+}
